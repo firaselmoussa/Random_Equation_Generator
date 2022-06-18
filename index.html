@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation_Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header">
+    <h1 id="title">&#8721q&#8746;ation&#178_Generat <img id="title-screw" src="images/screw-removebg-preview.png" alt=""> r&#176 </h1>
+
+    <div id="header-buttons">
+        <a href="#home" id="home-btn">Home</a>
+        <a href="#about" id="about-btn"> About</a>
+        <a href="#downloads" id="downloads-btn">Downloads</a>
+        <a href="#footer" id="contact-btn"> Contact</a>
+    </div>
+</div>
+
+
+    <div id="home">
+    <div id="instructions">
+<p> Equation Generator  generates a random equation that results in the specific answer you provide, <br> if no answer was provided the answer will be random.</p>
+<li>You can determine how many operations the equation includes by specifying a number in the 'Length' input bar, <br> otherwise the equation will take anywhere between 6 to 10 operations long.</li>
+<li>You can determine the level of complexity of the random equation by selecting a level from the 'Level' options.</li>
+</li>
+</div>
+
+    <div id="equationGenerationDiv">
+    <h3>Generate A Random Equation : </h3>
+    <label for="length">Length :</label>
+    <input id="length" type="number" placeholder="random?">
+
+    <label for="level">Level</label>
+    <select name="level" id="level">
+    <option value="1">Basic</option>
+    <option value="2">Calculus I</option>
+    <option value="3">Calculus II</option>
+    </select>
+<br><br>
+    <label for="desiredAnswer">Desired Answer :</label>
+    <input type="number" name="desiredAnswer" placeholder="random?" id="desiredAnswer">
+<br><br>
+    <label for="noAnswer">OR Random Answer?</label>
+    <input type="checkbox" name="noAnswer" id="noAnswer">
+
+    <button id="generate-btn">Generate</button>
+    </div>
+
+<h3 class="equation-display">Your random equation is : <span id="equation-display"></span></h3>
+<br>
+<h3 class="answer-display">The Answer is : <span id="answer-display"></span></h3>
+
+<br>
+<hr><br>
+</div>
+
+<!--  About-->
+<div id="about">
+
+<h2 >How to use?</h2>
+<ol>
+<li>Download the file from downloads section below.</li>
+<li>Invoke the function, given the Answer, length and level of the equation you desire <br> or a random value leave the paremeter as an "EMPTY STRING" or insert the value "random".</li>
+</ol>
+<img src="images/step-2.png" alt="">
+<p>Furthore instructions are documented in the file..</p>
+
+<h2>How it work?</h2>
+<ol>
+    <li>Your given values gets passed to an algorithim</li>
+    <li>Then the Algorithim :
+        <ul><br>
+            <li>Determines which operations to include according to your selected 'Level'.</li>
+            <li>Adds as many operators as you inserted as 'Length'.</li>
+            <li>And finally Evaluates & Refactors the equation till its result match the 'Answer' you inserted. </li>
+        </ul>
+    </li>
+</ol>
+
+<strong>Accurcy &#8771  99.998%</strong>
+
+</div>
+<br><hr><br>
+<!-- equation_generator.js -->
+<br>
+<div id="downloads">
+    <h3>Download JavaScript version of  equation_generator:</h3>
+    <a href="equationGenerator.js" download="">
+        <button class="javascript-download"></button>
+    </a> 
+<!-- <br> -->
+<hr>
+<br><br>
+    <h3>Download Python version of equation_generator:</h3>
+    <!-- href="equationGenerator.js" download="" -->
+    <a onclick="alert('Python version is not availble yet!')">
+        <button class="python-download"></button>
+    </a>
+<br><br>
+</div>
+
+
+<div id="footer">
+
+    <h3>Contact creator : firaselmoussa@gmail.com</h3>
+    <a href="https://www.linkedin.com/in/firas-el-moussa-ab325221b" target="_blank" id="linkedin-icon"></a>
+    <a href="https://github.com/Phoenix-Firas" target="_blank" id="github-icon"></a>
+
+</div>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="equationGenerator.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

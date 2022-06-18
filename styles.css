@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+
+}
+hr{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80vw;
+    margin-left: 10vw;
+    padding: 10px 0px;
+
+}
+#header{
+
+    width: 100vw;
+    height: fit-content;
+    box-shadow: 0px 2px 3px white;
+    border-bottom: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+#title{
+margin: 15px 0px 15px 30px ;
+font-size: 40px;
+filter: drop-shadow(0px 0px 1px white);
+
+}
+
+#title img{ 
+    width:40px;
+    /* animation: screw-rotate  2s ease-out infinite ; */
+}
+@keyframes screw-rotate {
+    60%{
+        filter: drop-shadow(0px 0px 10px white);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#header-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+#header-buttons a{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: 0px 0px 2px white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20%;
+    padding-left: 30%;
+}
+#header-buttons a:hover{
+    background: white;
+    transform: scale(1.1);
+    color: black;
+    text-shadow: 0px 0px 2px black;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+/* BODY CSS */
+
+
+
+#instructions{
+
+    padding: 60px 0px 0px 50px ;
+}
+#instructions li{
+    padding:10 0px 0px 20px;
+}
+#equationGenerationDiv{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#equationGenerationDiv h3{
+    padding-bottom: 10px;
+}
+#equationGenerationDiv label{
+    padding-left: 20px;
+
+
+}
+#length{
+    width:90px
+
+}
+#generate-btn{
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    text-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 3px white;
+}
+#generate-btn:hover {
+    text-shadow: 0px 0px 2px white;
+    color: white;
+    background: black;
+    filter: drop-shadow(0px 0px 2px white);
+    box-shadow: 0px 0px 3px white;
+} 
+
+.equation-display{
+    margin: 60px 0px 0px 60px;
+}
+.answer-display{
+    margin: 10px 0px 0px 60px;
+}
+/* About */
+/* .how-to-use-h2{
+padding: 10px 0px 20px 30px;
+} */
+#about{
+padding-left: 60px;
+}
+#about h2{
+    padding: 40px 0px 20px 0px;
+}
+#about li{
+padding-bottom: 10px;
+}
+#about img{
+border-radius: 5px;
+filter: drop-shadow(0 0 3px white);
+margin-top: 15px;
+}
+#about p{
+    padding: 15px 0px 20px 0px;
+}
+#about ul {
+    padding-left: 20px;
+}
+/* DOWNLOADS SECTION BELOW */
+#downloads h3{
+    padding: 30px 10vw;
+    padding-bottom: 0;
+}
+#downloads a{
+text-decoration: none;
+position: relative;
+left:50%;
+top:-40px;
+}
+#downloads button{
+    cursor: pointer;
+}
+.javascript-download {
+    background: url(images/white_js_icon.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 0px white);
+    border: none;
+    border-radius: 4px;
+}
+
+.javascript-download:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 1px white);
+    background: url(images/black_js_icon.png);
+    background-size: contain;
+}
+.python-download{
+    background: url(images/white-python-icon-removebg-preview.png);
+    background-size: contain;
+    width:50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 0px white);
+    border: none;
+}
+.python-download:hover {
+transform: scale(1.05);
+filter: drop-shadow(0px 0px 1px white);
+background: url(images/black-python-icon-removebg-preview.png);
+background-size: contain;
+}
+/* FOOTER CSS */
+#footer{
+border-top: 1px solid white;
+box-shadow: 0px -2px 3px white;
+}
+#footer h3{
+    float: left;
+    margin: 50px 20px 50px 10vw ;
+}
+#linkedin-icon{
+    background: url(images/white-linkedin-icon-removebg-preview.png);
+    background-size: cover;
+    width:50px;
+    height: 50px;
+float: left;
+border-radius: 50%;
+margin: 40px 20px 60px 20px;
+}
+#linkedin-icon:hover {
+    background: url(images/black-linkedin-logo.png);
+        background-size: cover;
+    filter: drop-shadow(0px 0px 2px white);
+}
+#github-icon{
+    background: url(images/white-github-icon-removebg-preview.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        float: left;
+        border-radius: 50%;
+        margin: 40px 20px 60px 20px;
+}
+#github-icon:hover {
+background: url(images/black-github-icon-removebg-preview.png);
+    background-size: cover;
+filter: drop-shadow(0px 0px 2px white);
+}
